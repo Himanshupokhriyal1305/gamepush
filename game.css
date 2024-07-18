@@ -295,6 +295,7 @@ justify-content: center;
 .slick-prev {
  
   z-index: 0 !important;
+  opacity: 1 !important;
 }
 
 
@@ -324,13 +325,14 @@ justify-content: center;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    opacity: 1;
+    opacity: 1 !important;
     color: #e5c418 !important;
     position: fixed;
     margin-bottom: -47px !important;
    
   
  }
+ 
 .slick-next:before{
   font-family: slick;
   font-size: 4rem !important;
@@ -338,18 +340,18 @@ justify-content: center;
     justify-content: center !important;
     align-items: center !important;
     line-height: 1;
-    opacity: 1;
+    opacity: 1 !important;
     color: #e5c418 !important;
     position: fixed;
    
 
+}
+.slick-prev{
+margin-left: -25px;
+  
 }}
 @media(max-width:650px){
-  .slick-prev:before {
-    margin-bottom: -47px !important;
-    opacity: 1 !important;
-    color: #e5c418 !important;
-  }
+ 
 .slick-prev:before{
   font-size: 4rem !important;
    display: flex !important;
@@ -358,6 +360,7 @@ justify-content: center;
     line-height: 1 !important;
     opacity: 1 !important;
     color: #e5c418 !important;
+     
   
 
 }
@@ -373,26 +376,28 @@ justify-content: center;
 
   }
   .slick-prev {
-    left: 105px !important;
-      opacity: 1;
+    left: 120px !important;
+      opacity: 1 !important;
       color: #e5c418 !important;
+      z-index: 1 !important;
  }
  .slick-next {
    right: 90px !important;
-   opacity: 1;
+   opacity: 1 !important;
        color: #e5c418 !important;
  }
 }
-@media(max-width:481px){
+@media(max-width:457px){
  
-  .slick-prev {
-    left: 150px !important;
+ .slick-prev {
+    left: 165px !important;
     opacity: 1 !important;
+    
  }
  .slick-next {
    right: 150px !important;
    opacity: 1 !important;
- }
+ } 
 }
 @media(max-width:501px){
  
